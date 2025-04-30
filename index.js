@@ -1,4 +1,4 @@
-// 
+// Express server
 import express from "express";
 // allows us to parse through the body of the request
 import bodyParser from "body-parser";
@@ -14,7 +14,7 @@ const app = express();
 const port = 3000;
 
 // allows the application to use EJS
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 // allows the Express server to correctly read form data via the body of the request (req.body)
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -23,14 +23,11 @@ app.use(express.static("public"));
 
 // default GET route
 app.get("/", async (req, res) => {
-    console.log(`Default GET route (\'/\'): req.body = `, req.body);
-    // render the idex.ejs file
-    res.render("index", {
-
-    });
+  console.log(`Default GET route (\'/\'): req.body = `, req.body);
+  // render the idex.ejs file
+  res.render("index", {});
 });
 
-
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+  console.log(`Server running on port ${port}`);
 });

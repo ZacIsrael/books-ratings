@@ -21,6 +21,25 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // tells the application to serve static files (CSS & other front end files) from the "public" directory
 app.use(express.static("public"));
 
+// accessing the postgreSQL server
+const db = new pg.Client({
+  user: process.env.PG_USERNAME,
+  host: "localhost",
+  // access the "books-app" database from the postgreSQL server
+  database: "books-app",
+  password: process.env.PG_PASSWORD,
+  port: 5432
+});
+// connect to the postgreSQL server
+db.connect();
+
+// constants for the tables in the books-app database in the postgreSQL server
+const usersTable = "users";
+const booksTable = "books";
+const reviewsTable = "reviews";
+const notesTable = "notes";
+
+
 // default GET route
 app.get("/", async (req, res) => {
   console.log(`Default GET route (\'/\'): req.body = `, req.body);

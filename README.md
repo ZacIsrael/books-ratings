@@ -1,8 +1,16 @@
-The following is from Dr. Angela Yu & how she wants me to implement this project:
-
-Overview:
+The following is from Dr. Angela Yu:
 
 "I read a lot of books but after I finish reading them I often don't remember all the most salient parts of the book. So I started taking notes. This capstone project is built on this idea. My friend Derek Sivers has this fantastic website where he has all the non-fiction books he has read, his notes, his ratings and when he read them. The books are sortable by rating, recency and title. It's a such cool idea for a project so I'm including it as a capstone here in this course."
+
+Project Overview:
+
+For this capstone project, you will create a web application inspired by Derek Sivers' personal book notes site.
+The platform will allow users to track non-fiction books they have read, including:
+
+* Personal notes for each book
+* A rating
+* The date they completed reading
+* A sortable list of books (by rating, recency, or title)
 
 Project Objectives:
 * Revise how to integrate public APIs into web projects.
@@ -35,3 +43,7 @@ Project Requirements:
 * Documentation:
     * Include comments throughout your code to explain your logic.
 
+Why this project?
+
+This capstone mirrors real-world full-stack development practices. You will work with databases, external APIs, server-side rendering, and front-end development, all while sharpening your planning, debugging, and documentation skills.
+By completing this project, you will demonstrate a strong, well-rounded ability to create professional web applications.
